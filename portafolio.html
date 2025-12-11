@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Mis Proyectos</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="portafolio.html" class="activo">Portafolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-portafolio">
+        <h2>Mis Proyectos y Actividades</h2>
+        <p>A continuación presento una selección de mis trabajos más recientes. Haz clic en el botón de cada proyecto para explorar más a fondo.</p>
+
+        <div class="galeria-proyectos">
+            
+            <article class="proyecto glass-effect">
+                <img src="img/langchain.png" alt="Imagen previa del proyecto Chatbot">
+                <h3>Chatbot con LangChain (Prototipo)</h3>
+                <p>
+                    Proyecto de chatbot desarrollado para trabajar con LangChain, demostrando conocimientos en IA, Python y procesamiento de lenguaje.
+                </p>
+                <a href="https://github.com/EnriqueVJCHR/2doExamenParcial-IA.git" target="_blank" class="boton-proyecto">
+                    Ver Código en GitHub
+                </a>
+            </article>
+
+            <article class="proyecto glass-effect">
+                <img src="img/landing.png" alt="Vista previa Landing Page Bootstrap">
+                <h3>Landing Page con Bootstrap</h3>
+                <p>
+                    Página web realizada en el curso utilizando el framework Bootstrap. Diseño responsivo y moderno.
+                </p>
+                <a href="https://enriquevjchr.github.io/landing-bootstrap/" target="_blank" class="boton-proyecto">
+                    Ver Proyecto Web
+                </a>
+            </article>
+
+            <article class="proyecto glass-effect">
+                <img src="img/congreso.png" alt="Vista previa Examen Lenguaje E">
+                <h3>Examen Parcial - Lenguaje Ensamblador</h3>
+                <p>
+                    Trabajo escolar donde se aplicaron conceptos avanzados de HTML y CSS para una maquetación compleja.
+                </p>
+                <a href="https://enriquevjchr.github.io/2doExamenParcial-LenguajeE/" target="_blank" class="boton-proyecto">
+                    Ver Proyecto Web
+                </a>
+            </article>
+
+            <article class="proyecto glass-effect proyecto-hobby-centrado">
+                <h3>Hobbies (Videojuegos / Música)</h3>
+                <div class="carrusel-hobbies" id="carruselHobbies">
+                    <img src="img/lol.jpg" alt="Videojuego Favorito" class="carrusel-img activa">
+                    <img src="img/Sb.jpg" alt="Artista Favorito" class="carrusel-img">
+                    <img src="img/cato.jpg" alt="Gatos" class="carrusel-img">
+                </div>
+                <p class="hobbies-texto">
+                    Estos son algunos de mis hobbies los cuales mayormente se basan en jugar videojuegos y escuchar musica (y mi gusto por los gatos)
+                </p>
+                <button class="boton-proyecto" onclick="siguienteSlide()">Siguiente Hobby &gt;</button>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Portafolio Profesional.</p>
+    </footer>
+
+    <script src="js/script.js"></script> 
+</body>
+</html>
